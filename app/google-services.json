@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "155805325359",
+    "firebase_url": "https://wisata-tanoh-gayo.firebaseio.com",
+    "project_id": "wisata-tanoh-gayo",
+    "storage_bucket": "wisata-tanoh-gayo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155805325359:android:cc3b132307cb85cc",
+        "android_client_info": {
+          "package_name": "com.meivaldi.adminwisatatanohgayo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155805325359-sm7k7himt1c1o1b40bcialjrfko1nh6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSACesggn1hOnyv_WMVnXiyXCi1ctwdr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155805325359-sm7k7himt1c1o1b40bcialjrfko1nh6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155805325359:android:8e898937f8c8b242",
+        "android_client_info": {
+          "package_name": "com.meivaldi.wisatatanohgayo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155805325359-sm7k7himt1c1o1b40bcialjrfko1nh6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSACesggn1hOnyv_WMVnXiyXCi1ctwdr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155805325359-sm7k7himt1c1o1b40bcialjrfko1nh6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
