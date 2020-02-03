@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EditTempat">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/Toolbar"
+            android:titleTextColor="@android:color/white"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_background"
+            android:elevation="5dp"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/namaET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:hint="Nama Tempat"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/alamatET"
+                android:layout_below="@id/namaET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Alamat"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/deskripsiET"
+                android:layout_below="@id/alamatET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:hint="Deskripsi Tempat"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/jamET"
+                android:layout_below="@id/deskripsiET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Jam Operasional"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ketinggianET"
+                android:layout_below="@id/jamET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Ketinggian"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/luasET"
+                android:layout_below="@id/ketinggianET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="text"
+                android:hint="Fasilitas"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/latitudeET"
+                android:layout_below="@id/luasET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Latitude"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/longitudeET"
+                android:layout_below="@id/latitudeET"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Longitude"/>
+
+            <LinearLayout
+                android:id="@+id/changeCloserPlace"
+                android:layout_below="@id/longitudeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/tempatTerdekat"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"/>
+
+                <Button
+                    android:id="@+id/ubah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/closerPlace"
+                android:layout_below="@id/changeCloserPlace"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/picture1"
+                android:layout_below="@id/closerPlace"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/changePicture1"
+                android:layout_below="@id/picture1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Ubah" />
+
+            <ImageView
+                android:id="@+id/picture2"
+                android:layout_below="@id/changePicture1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/changePicture2"
+                android:layout_below="@id/picture2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Ubah" />
+
+            <ImageView
+                android:id="@+id/picture3"
+                android:layout_below="@id/changePicture2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/changePicture3"
+                android:layout_below="@id/picture3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Ubah" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_below="@id/changePicture3"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

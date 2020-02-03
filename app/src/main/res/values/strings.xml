@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AdminWisataTanohGayo</string>
+    <string name="logout">Logout</string>
+    <string name="hapus">Hapus</string>
 </resources>
